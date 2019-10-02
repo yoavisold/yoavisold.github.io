@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Neue Machina';
-  src: url('../dist/assets/NeueMachina-Regular.otf');
+  src: url('/assets/NeueMachina-Regular.otf');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Neue Machina';
-  src: url('../dist/assets/NeueMachina-Bold.otf');
+  src: url('/assets/NeueMachina-Bold.otf');
   font-weight: bold;
 }
 
@@ -66,4 +66,21 @@ footer{
 footer > *{
   margin: 0;
   line-height: 1;
+}
+
+@media(max-width: 600px){
+  #chatborder{
+    margin: 10px;
+    margin-bottom: 90px;
+    padding: 0;
+  }
+
+  #chatbox{
+    width: 100%;
+  }
+
+  footer{
+    padding: 1rem;
+    flex-direction: column;
+  }
 }

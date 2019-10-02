@@ -72,7 +72,7 @@ function newEntry() {
       if(lastUserMessage.toLowerCase().includes("yes")) {
         botMessage = "Perfect! Now cook it yourself, because Angela doesn’t know how to cook! </br> Meanwhile she is listening to 'Great Gable - Drift.' Do you remember the song? ";
       }else if (lastUserMessage.toLowerCase().includes("no")) {
-        botMessage = 'I am confused, you used to have only two meal options! Just take some cereal, then.</br> By the way Angela is listening to \'Great Gable - Drift.\' Do you remember the song? ';
+        botMessage = 'I am confused, you used to have only two meal options! Just take some cereal then.</br> By the way Angela is listening to \'Great Gable - Drift.\' Do you remember the song? ';
       }else{
         alert("I SAID YES OR NO ANSWERS! NOW I HAVE TO REPEAT MYSELF!");
       }
@@ -81,7 +81,7 @@ function newEntry() {
       if(lastUserMessage.toLowerCase().includes("yes")) {
         botMessage = "Ewww, Angela got cheesy and said it reminds her of Mavrovo. Get a room you guys. </br> Anyways she asked if you wanted nudes for your birthday? ";
       }else if (lastUserMessage.toLowerCase().includes("no")) {
-        botMessage = 'YOU BASTARD! Angela says it reminds her of Mavrovo at the beach, but don’t worry I won’t tell her, you dont remember. </br> Anyways she asked if you wanted nudes for your birthday?';
+        botMessage = 'YOU BASTARD! Angela says it reminds her of Mavrovo at the beach, but don’t worry I won’t tell her you dont remember. </br> Anyways she asked if you wanted nudes for your birthday?';
       }else{
         alert("I SAID YES OR NO ANSWERS! NOW I HAVE TO REPEAT MYSELF!");
       }
@@ -126,7 +126,9 @@ document.onkeypress = keyPress;
 function keyPress(e) {
   var x = e || window.event;
   var key = (x.keyCode || x.which);
-  if (key == 13 || key == 3) {
+  if (key == 13 || key == 3){
+    console.log(document.getElementById("chatbox"))
+    document.getElementById("chatbox").focus();
     newEntry();
   }
   if (key == 38) {
