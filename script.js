@@ -20,7 +20,6 @@ function newEntry() {
     lastUserMessage = document.getElementById("chatbox").value;
     document.getElementById("chatbox").value = "";
     messages.push("<b>Yoav: </b>" + lastUserMessage);
-    console.log(botMessage);
     if (botMessage === ""){
         botMessage = "Dear Mister Weber, Angela coded (badly) a chatbot for you to talk too since you have no friends.  It is coded really badly so please respond only with 'yes' and 'no'. Mmmkay?"
     }
@@ -120,6 +119,7 @@ function newEntry() {
 
 
   }
+  document.getElementById("chatbox").scrollIntoView();
 }
 
 document.onkeypress = keyPress;
@@ -127,8 +127,6 @@ function keyPress(e) {
   var x = e || window.event;
   var key = (x.keyCode || x.which);
   if (key == 13 || key == 3){
-    console.log(document.getElementById("chatbox"))
-    document.getElementById("chatbox").focus();
     newEntry();
   }
   if (key == 38) {
