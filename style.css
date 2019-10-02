@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../dist/assets/NeueMachina-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../dist/assets/NeueMachina-Bold.otf');
+  font-weight: bold;
+}
+
+body {
+  font-family: "Neue Machina", sans-serif;
+  background: black;
+}
+
+.chatlog{
+  color: white;
+  line-height: 1.2;
+}
+
+.chatlog b{
+  margin-right: .5rem;
+  width: 200px;
+}
+
+.hide{
+  margin: 0;
+  line-height: 1;
+}
+
+.chatlog:nth-child(even){
+  color: greenyellow;
+}
+
+#chatborder {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding: 10px 20px 15px 15px;
+  border-radius: 15px;
+}
+
+
+#chatbox {
+  height: 25px;
+  font-size: 1.2rem;
+  width: 50%;
+  font-family: "Neue Machina", sans-serif;
+
+}
+
+footer{
+  color: red;
+  font-size: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: black;
+}
+
+footer > *{
+  margin: 0;
+  line-height: 1;
+}
